@@ -6,36 +6,103 @@
 <title>B.Pharm Pathshala | Yash Maheshwari Sir</title>
 <meta name="description" content="B.Pharm Pathshala — semester-wise Important Questions for PCI New and Old AKTU syllabuses.">
 <style>@media(max-width:650px)
+
+/* B.Pharm Pathshala — News Scrolling Ticker */
 .news-ticker {
   display: flex;
   align-items: center;
-  height: 42px;
+  width: 100%;
+  height: 48px;
   overflow: hidden;
   background: #c90016;
-  color: white;
+  color: #ffffff;
+  border-bottom: 2px solid #a50012;
+  box-shadow: 0 2px 6px rgba(165, 0, 18, 0.18);
 }
 
 .ticker-label {
+  position: relative;
+  z-index: 2;
+  flex-shrink: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
   background: #a50012;
-  padding: 13px 12px;
+  color: #ffffff;
   font-size: 12px;
-  font-weight: bold;
+  font-weight: 800;
+  letter-spacing: 1px;
   white-space: nowrap;
+  border-right: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 .ticker-window {
   flex: 1;
+  min-width: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
   overflow: hidden;
   white-space: nowrap;
 }
 
 .ticker-text {
   display: inline-block;
+  flex-shrink: 0;
   padding-left: 100%;
-  animation: tickerMove 25s linear infinite;
-  font-size: 14px;
-  font-weight: bold;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+  white-space: nowrap;
+  animation: tickerMove 35s linear infinite;
+  will-change: transform;
 }
+
+.ticker-text:hover {
+  animation-play-state: paused;
+}
+
+@keyframes tickerMove {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 650px) {
+  .news-ticker {
+    height: 48px;
+  }
+
+  .ticker-label {
+    padding: 0 10px;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+  }
+
+  .ticker-text {
+    font-size: 16px;
+    animation-duration: 35s;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ticker-text {
+    animation: none;
+    padding-left: 12px;
+    white-space: normal;
+  }
+
+  .ticker-window {
+    overflow: auto;
+  }
+}
+
 
 @keyframes tickerMove {
   from { transform: translateX(0); }
