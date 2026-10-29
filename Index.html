@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>B.Pharm Pathshala | Yash Sir</title>
+
+<meta name="description" content="B.Pharm Pathshala - PCI New Syllabus, Old AKTU Syllabus, Pharmacy Notes, Important Questions and PDF Study Material.">
+
+<style>
+:root {
+  --red: #c90016;
+  --dark-red: #a50012;
+  --white: #ffffff;
+  --light-red: #fff3f4;
+  --text: #202124;
+  --border: #f0b9bf;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--white);
+  color: var(--text);
+}
+
+header {
+  background: white;
+  padding: 20px 15px;
+  border-bottom: 3px solid var(--red);
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background: var(--red);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  flex-shrink: 0;
+}
+
+.brand h1 {
+  font-size: clamp(23px, 4vw, 36px);
+  margin: 0;
+  color: var(--text);
+}
+
+.brand h1 span {
+  color: var(--red);
+}
+
+.brand p {
+  margin: 7px 0 0;
+  font-size: 14px;
+}
+
+.tagline {
+  color: var(--red);
+  font-weight: bold;
+  text-align: right;
+}
+
+nav {
+  background: var(--red);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 10px;
+}
+
+nav button {
+  color: white;
+  background: transparent;
+  border: 1px solid transparent;
+  padding: 12px 17px;
+  border-radius: 7px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background: white;
+  color: var(--red);
+}
+
+button, .btn {
+  border: 1px solid var(--red);
+  border-radius: 8px;
+  padding: 11px 16px;
+  background: var(--red);
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+button:hover, .btn:hover {
+  background: var(--dark-red);
+}
+
+button.secondary {
+  background: white;
+  color: var(--red);
+}
+
+button.secondary:hover {
+  background: var(--light-red);
+}
+
+button.danger {
+  background: #ffe5e8;
+  color: var(--dark-red);
+}
+
+.hero {
+  background: linear-gradient(110deg, #fff1f2, white, #fff6f6);
+  padding: 40px 18px;
+  border-bottom: 1px solid #f5dadd;
+}
+
+.hero-content {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  align-items: center;
+  gap: 25px;
+}
+
+.hero h2 {
+  font-size: clamp(28px, 5vw, 46px);
+  color: var(--text);
+  margin: 0 0 12px;
+}
+
+.hero h2 span {
+  color: var(--red);
+}
+
+.hero p {
+  line-height: 1.7;
+  font-size: 17px;
+}
+
+.pharmacy-art {
+  text-align: center;
+  font-size: 65px;
+  color: var(--red);
+}
+
+.pharmacy-art p {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--red);
+}
+
+main {
+  max-width: 1100px;
+  margin: auto;
+  padding: 22px 15px 35px;
+}
+
+.panel {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 13px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 14px #c9001610;
+}
+
+h2, h3 {
+  color: var(--red);
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.course-card {
+  border: 1px solid var(--red);
+  border-radius: 13px;
+  padding: 20px;
+  background: white;
+}
+
+.course-icon {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background: var(--red);
+  color: white;
+  display: grid;
+  place-items: center;
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+.course-card h3 {
+  font-size: 23px;
+  margin: 8px 0;
+}
+
+.course-card p {
+  line-height: 1.6;
+}
+
+.course-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.feature {
+  text-align: center;
+  background: var(--light-red);
+  border: 1px solid #f5dadd;
+  border-radius: 11px;
+  padding: 18px 10px;
+}
+
+.feature .icon {
+  font-size: 32px;
+  color: var(--red);
+}
+
+.feature h3 {
+  font-size: 16px;
+  color: var(--text);
+  margin-bottom: 7px;
+}
+
+.feature p {
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+select, input {
+  width: 100%;
+  padding: 12px;
+  margin: 7px 0 14px;
+  border: 1px solid #e0b6bb;
+  border-radius: 8px;
+  background: white;
+  font-size: 15px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  font-size: 14px;
+}
+
+.semester {
+  background: var(--light-red);
+  border: 1px solid #efb5bc;
+  border-radius: 12px;
+  padding: 20px 12px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.semester:hover {
+  background: #ffe1e5;
+  border-color: var(--red);
+}
+
+.semester strong {
+  color: var(--red);
+  font-size: 17px;
+}
+
+.subject {
+  background: white;
+  border: 1px solid #efc8cd;
+  border-left: 5px solid var(--red);
+  border-radius: 9px;
+  padding: 15px;
+  margin: 10px 0;
+}
+
+.subject h3 {
+  font-size: 16px;
+  margin: 0 0 8px;
+}
+
+.subject a {
+  color: var(--red);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.subject a:hover {
+  text-decoration: underline;
+}
+
+.small {
+  color: #666;
+  font-size: 13px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.notice {
+  background: var(--light-red);
+  border: 1px solid var(--border);
+  padding: 13px;
+  border-radius: 9px;
+  line-height: 1.6;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+#message {
+  overflow-wrap: anywhere;
+  color: var(--red);
+  font-size: 14px;
+}
+
+footer {
+  background: var(--dark-red);
+  color: white;
+  padding: 25px 15px;
+  text-align: center;
+}
+
+footer h3 {
+  color: white;
+  margin: 0 0 8px;
+}
+
+footer p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+@media (max-width: 650px) {
+  .header-content {
+    justify-content: center;
+  }
+
+  .brand {
+    justify-content: center;
+  }
+
+  .brand h1 {
+    font-size: 24px;
+  }
+
+  .tagline {
+    text-align: center;
+    width: 100%;
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .pharmacy-art {
+    font-size: 48px;
+  }
+
+  nav button {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  main {
+    padding: 15px 10px;
+  }
+
+  .panel {
+    padding: 15px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="header-content">
+    <div class="brand">
+      <div class="logo">⚕</div>
+      <div>
+        <h1>B.Pharm <span>Pathshala</span></h1>
+        <p>Notes | Important Questions | Study Material</p>
+      </div>
+    </div>
+
+    <div class="tagline">
+      Learn • Grow • Become a Better Pharmacist
+      <p>— By Yash Sir</p>
+    </div>
+  </div>
+</header>
+
+<nav>
+  <button onclick="showHome()">⌂ Home</button>
+  <button onclick="selectSyllabus('pci')">PCI New Syllabus</button>
+  <button onclick="selectSyllabus('aktu')">Old AKTU Syllabus</button>
+  <button onclick="showAdmin()">Admin Upload</button>
+</nav>
+
+<section class="hero" id="hero">
+  <div class="hero-content">
+    <div>
+      <h2>Welcome to<br>B.Pharm <span>Pathshala</span></h2>
+      <p>
+        Your study companion for B.Pharm pharmacy notes,
+        semester-wise subjects, important questions and PDF study material.
+      </p>
+      <button onclick="selectSyllabus('pci')">Explore New Syllabus</button>
+      <button class="secondary" onclick="selectSyllabus('aktu')">
+        Old AKTU Syllabus
+      </button>
+    </div>
+
+    <div class="pharmacy-art">
+      💊 ⚕ 🧪
+      <p>Pharmacy Builds a Healthier World</p>
+      <div>⚗️ 📚 🌿</div>
+    </div>
+  </div>
+</section>
+
+<main>
+
+<section id="home">
+  <div class="grid">
+
+    <div class="course-card">
+      <div class="course-icon">🎓</div>
+      <h3>B.Pharm</h3>
+      <p>Semester 1–8</p>
+      <p>Choose your syllabus to find subjects, notes and important questions.</p>
+      <div class="course-buttons">
+        <button onclick="selectSyllabus('pci')">PCI New Syllabus</button>
+        <button class="secondary" onclick="selectSyllabus('aktu')">
+          Old AKTU Syllabus
+        </button>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <div class="course-icon">⚗️</div>
+      <h3>Pharmacy Study Material</h3>
+      <p>Subject-wise PDF notes and exam preparation resources.</p>
+      <p class="small">Notes will appear here after they are published on the website.</p>
+      <button onclick="selectSyllabus('pci')">View Subjects</button>
+    </div>
+
+  </div>
+
+  <br>
+
+  <div class="grid">
+    <div class="feature">
+      <div class="icon">📄</div>
+      <h3>Easy to View</h3>
+      <p>Read PDF notes online.</p>
+    </div>
+
+    <div class="feature">
+      <div class="icon">⬇️</div>
+      <h3>Easy to Download</h3>
+      <p>Save notes for offline study.</p>
+    </div>
+
+    <div class="feature">
+      <div class="icon">📚</div>
+      <h3>Semester Wise</h3>
+      <p>Find your semester subjects.</p>
+    </div>
+
+    <div class="feature">
+      <div class="icon">🎯</div>
+      <h3>Important Questions</h3>
+      <p>Prepare for your exams.</p>
+    </div>
+  </div>
+</section>
+
+<section id="courses" class="panel hidden">
+  <h2 id="syllabusTitle">Select Semester</h2>
+
+  <p class="small">
+    Select a semester to see its subjects and available PDF notes.
+  </p>
+
+  <div id="semesters" class="grid"></div>
+</section>
+
+<section id="subjectsSection" class="panel hidden">
+  <button class="secondary" onclick="backToSemesters()">← Back to Semesters</button>
+
+  <h2 id="subjectsTitle">Subjects</h2>
+
+  <p class="small">
+    Select View PDF or Download when notes are available.
+  </p>
+
+  <div id="subjects"></div>
+</section>
+
+<section id="admin" class="panel hidden">
+  <h2>🔐 Yash Sir — Admin Panel</h2>
+
+  <div class="notice">
+    <strong>Important:</strong> This is a simple static website.
+    The demo below saves data only in the current browser.
+    It does not securely publish files for all students.
+    For public uploads, connect a backend or cloud storage.
+  </div>
+
+  <label for="password">Admin Password</label>
+  <input id="password" type="password" placeholder="Enter admin password">
+
+  <button onclick="login()">Login</button>
+
+  <div id="uploadForm" class="hidden">
+    <hr>
+
+    <label for="uploadSyllabus">Syllabus</label>
+    <select id="uploadSyllabus">
+      <option value="pci">PCI New Syllabus</option>
+      <option value="aktu">Old AKTU Syllabus</option>
+    </select>
+
+    <label for="uploadSemester">Semester</label>
+    <select id="uploadSemester"></select>
+
+    <label for="subjectName">Subject Name</label>
+    <input id="subjectName" placeholder="e.g. Pharmaceutical Analysis">
+
+    <label for="pdfTitle">PDF Title</label>
+    <input id="pdfTitle" placeholder="e.g. Unit 1 Notes">
+
+    <label for="pdfFile">Select PDF</label>
+    <input id="pdfFile" type="file" accept=".pdf,application/pdf">
+
+    <button onclick="uploadPDF()">Add PDF</button>
+
+    <p id="message"></p>
+
+    <hr>
+
+    <h3>Uploaded Notes in This Browser</h3>
+    <div id="adminFiles"></div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <h3>⚕ B.Pharm Pathshala</h3>
+  <p>Presented by Yash Sir</p>
+  <p>Pharmacy is not just a course. It is a commitment to life.</p>
+  <p>Study | Prepare | Succeed</p>
+  <p>© <span id="year"></span> B.Pharm Pathshala</p>
+</footer>
+
+<script>
+const subjectsData = {
+  pci: {
+    1: [
+      "Human Anatomy and Physiology I",
+      "Pharmaceutical Analysis I",
+      "Pharmaceutics I",
+      "Pharmaceutical Inorganic Chemistry",
+      "Communication Skills",
+      "Remedial Biology / Remedial Mathematics"
+    ],
+    2: [
+      "Human Anatomy and Physiology II",
+      "Pharmaceutical Organic Chemistry I",
+      "Biochemistry",
+      "Pathophysiology",
+      "Computer Applications in Pharmacy",
+      "Environmental Sciences"
+    ],
+    3: [
+      "Pharmaceutical Organic Chemistry II",
+      "Physical Pharmaceutics I",
+      "Pharmaceutical Microbiology",
+      "Pharmaceutical Engineering"
+    ],
+    4: [
+      "Pharmaceutical Organic Chemistry III",
+      "Medicinal Chemistry I",
+      "Physical Pharmaceutics II",
+      "Pharmacology I",
+      "Pharmacognosy and Phytochemistry I"
+    ],
+    5: [
+      "Medicinal Chemistry II",
+      "Industrial Pharmacy I",
+      "Pharmacology II",
+      "Pharmacognosy and Phytochemistry II",
+      "Pharmaceutical Jurisprudence"
+    ],
+    6: [
+      "Medicinal Chemistry III",
+      "Pharmacology III",
+      "Herbal Drug Technology",
+      "Biopharmaceutics and Pharmacokinetics",
+      "Pharmaceutical Biotechnology",
+      "Quality Assurance"
+    ],
+    7: [
+      "Instrumental Methods of Analysis",
+      "Industrial Pharmacy II",
+      "Pharmacy Practice",
+      "Novel Drug Delivery Systems"
+    ],
+    8: [
+      "Biostatistics and Research Methodology",
+      "Social and Preventive Pharmacy",
+      "Pharma Marketing Management",
+      "Pharmaceutical Regulatory Science",
+      "Pharmacovigilance",
+      "Quality Control and Standardization of Herbals",
+      "Computer Aided Drug Design",
+      "Cell and Molecular Biology",
+      "Cosmetic Science",
+      "Experimental Pharmacology",
+      "Advanced Instrumentation Techniques",
+      "Dietary Supplements and Nutraceuticals"
+    ]
+  },
+
+  aktu: {
+    1: [
+      "Human Anatomy and Physiology I",
+      "Pharmaceutical Analysis I",
+      "Pharmaceutics I",
+      "Pharmaceutical Inorganic Chemistry",
+      "Communication Skills",
+      "Remedial Biology / Remedial Mathematics"
+    ],
+    2: [
+      "Human Anatomy and Physiology II",
+      "Pharmaceutical Organic Chemistry I",
+      "Biochemistry",
+      "Pathophysiology",
+      "Computer Applications in Pharmacy",
+      "Environmental Sciences"
+    ],
+    3: [
+      "Pharmaceutical Organic Chemistry II",
+      "Physical Pharmaceutics I",
+      "Pharmaceutical Microbiology",
+      "Pharmaceutical Engineering"
+    ],
+    4: [
+      "Pharmaceutical Organic Chemistry III",
+      "Medicinal Chemistry I",
+      "Physical Pharmaceutics II",
+      "Pharmacology I",
+      "Pharmacognosy and Phytochemistry I"
+    ],
+    5: [
+      "Medicinal Chemistry II",
+      "Industrial Pharmacy I",
+      "Pharmacology II",
+      "Pharmacognosy and Phytochemistry II",
+      "Pharmaceutical Jurisprudence"
+    ],
+    6: [
+      "Medicinal Chemistry III",
+      "Pharmacology III",
+      "Herbal Drug Technology",
+      "Biopharmaceutics and Pharmacokinetics",
+      "Pharmaceutical Biotechnology",
+      "Quality Assurance"
+    ],
+    7: [
+      "Instrumental Methods of Analysis",
+      "Industrial Pharmacy II",
+      "Pharmacy Practice",
+      "Novel Drug Delivery Systems"
+    ],
+    8: [
+      "Biostatistics and Research Methodology",
+      "Social and Preventive Pharmacy",
+      "Pharma Marketing Management",
+      "Pharmaceutical Regulatory Science",
+      "Pharmacovigilance",
+      "Quality Control and Standardization of Herbals",
+      "Computer Aided Drug Design",
+      "Cell and Molecular Biology",
+      "Cosmetic Science",
+      "Experimental Pharmacology",
+      "Advanced Instrumentation Techniques",
+      "Dietary Supplements and Nutraceuticals"
+    ]
+  }
+};
+
+let currentSyllabus = "pci";
+let currentSemester = 1;
+let adminPassword = localStorage.getItem("bpp_admin_password");
+let notes = JSON.parse(localStorage.getItem("bpp_notes") || "[]");
+
+function showHome() {
+  hideSections();
+  document.getElementById("home").classList.remove("hidden");
+  document.getElementById("hero").classList.remove("hidden");
+}
+
+function hideSections() {
+  ["home", "courses", "subjectsSection", "admin"].forEach(id => {
+    document.getElementById(id).classList.add("hidden");
+  });
+  document.getElementById("hero").classList.add("hidden");
+}
+
+function selectSyllabus(type) {
+  currentSyllabus = type;
+  hideSections();
+
+  document.getElementById("courses").classList.remove("hidden");
+
+  document.getElementById("syllabusTitle").textContent =
+    type === "pci"
+      ? "PCI New Syllabus — B.Pharm"
+      : "Old AKTU Syllabus — B.Pharm";
+
+  const container = document.getElementById("semesters");
+  container.innerHTML = "";
+
+  for (let i = 1; i <= 8; i++) {
+    const card = document.createElement("div");
+    card.className = "semester";
+
+    const title = document.createElement("strong");
+    title.textContent = "Semester " + i;
+
+    const description = document.createElement("p");
+    description.className = "small";
+    description.textContent = "View Subjects and Notes";
+
+    card.append(title, description);
+    card.onclick = () => showSubjects(i);
+
+    container.appendChild(card);
+  }
+
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function showSubjects(semester) {
+  currentSemester = semester;
+  hideSections();
+
+  document.getElementById("subjectsSection").classList.remove("hidden");
+
+  document.getElementById("subjectsTitle").textContent =
+    (currentSyllabus === "pci" ? "PCI New Syllabus" : "Old AKTU Syllabus")
+    + " — Semester " + semester;
+
+  const container = document.getElementById("subjects");
+  container.innerHTML = "";
+
+  subjectsData[currentSyllabus][semester].forEach(subjectName => {
+    const card = document.createElement("div");
+    card.className = "subject";
+
+    const title = document.createElement("h3");
+    title.textContent = "📘 " + subjectName;
+    card.appendChild(title);
+
+    const matchingNotes = notes.filter(note =>
+      note.syllabus === currentSyllabus &&
+      Number(note.semester) === semester &&
+      note.subject === subjectName
+    );
+
+    if (matchingNotes.length === 0) {
+      const empty = document.createElement("p");
+      empty.className = "small";
+      empty.textContent = "Notes coming soon.";
+      card.appendChild(empty);
+    }
+
+    matchingNotes.forEach(note => {
+      const row = document.createElement("p");
+      row.className = "small";
+
+      const label = document.createElement("span");
+      label.textContent = note.title + " — ";
+
+      const view = document.createElement("a");
+      view.href = note.url;
+      view.target = "_blank";
+      view.rel = "noopener";
+      view.textContent = "View PDF";
+
+      const download = document.createElement("a");
+      download.href = note.url;
+      download.download = note.filename;
+      download.textContent = " | Download";
+
+      row.append(label, view, download);
+      card.appendChild(row);
+    });
+
+    container.appendChild(card);
+  });
+
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function backToSemesters() {
+  selectSyllabus(currentSyllabus);
+}
+
+function showAdmin() {
+  hideSections();
+  document.getElementById("admin").classList.remove("hidden");
+
+  const semesterSelect = document.getElementById("uploadSemester");
+  semesterSelect.innerHTML = "";
+
+  for (let i = 1; i <= 8; i++) {
+    const option = document.createElement("option");
+    option.value = i;
+    option.textContent = "Semester " + i;
+    semesterSelect.appendChild(option);
+  }
+
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function login() {
+  const enteredPassword = document.getElementById("password").value;
+
+  if (!enteredPassword) {
+    alert("Please enter a password.");
+    return;
+  }
+
+  if (!adminPassword) {
+    localStorage.setItem("bpp_admin_password", enteredPassword);
+    adminPassword = enteredPassword;
+    alert("Password saved in this browser. This is not secure authentication.");
+  } else if (enteredPassword !== adminPassword) {
+    alert("Incorrect password.");
+    return;
+  }
+
+  document.getElementById("uploadForm").classList.remove("hidden");
+  renderAdminFiles();
+}
+
+function uploadPDF() {
+  if (document.getElementById("password").value !== adminPassword) {
+    alert("Please log in first.");
+    return;
+  }
+
+  const syllabus = document.getElementById("uploadSyllabus").value;
+  const semester = Number(document.getElementById("uploadSemester").value);
+  const subject = document.getElementById("subjectName").value.trim();
+  const title = document.getElementById("pdfTitle").value.trim();
+  const file = document.getElementById("pdfFile").files[0];
+
+  if (!subject || !title || !file) {
+    alert("Please enter the subject, PDF title and select a PDF file.");
+    return;
+  }
+
+  if (!file.name.toLowerCase().endsWith(".pdf")) {
+    alert("Please select a PDF file.");
+    return;
+  }
+
+  if (!subjectsData[syllabus][semester].includes(subject)) {
+    alert("Please enter a subject exactly as it appears in the selected semester.");
+    return;
+  }
+
+  const reader = new FileReader();
+
+  reader.onload = function () {
+    const newNote = {
+      id: Date.now(),
+      syllabus,
+      semester,
+      subject,
+      title,
+      filename: file.name,
+      url: reader.result
+    };
+
+    notes.push(newNote);
+
+    try {
+      localStorage.setItem("bpp_notes", JSON.stringify(notes));
+
+      document.getElementById("message").textContent =
+        "PDF saved in this browser only.";
+
+      document.getElementById("subjectName").value = "";
+      document.getElementById("pdfTitle").value = "";
+      document.getElementById("pdfFile").value = "";
+
+      renderAdminFiles();
+    } catch (error) {
+      notes = notes.filter(note => note.id !== newNote.id);
+
+      document.getElementById("message").textContent =
+        "Browser storage is full. Use public PDF links or cloud storage for larger files.";
+    }
+  };
+
+  reader.readAsDataURL(file);
+}
+
+function renderAdminFiles() {
+  const container = document.getElementById("adminFiles");
+  container.innerHTML = "";
+
+  if (notes.length === 0) {
+    container.textContent = "No notes added yet.";
+    return;
+  }
+
+  notes.forEach(note => {
+    const row = document.createElement("div");
+    row.className = "subject";
+
+    const label = document.createElement("p");
+    label.textContent =
+      note.title + " — " + note.subject +
+      " (Semester " + note.semester + ")";
+
+    const remove = document.createElement("button");
+    remove.className = "danger";
+    remove.textContent = "Delete";
+
+    remove.onclick = function () {
+      if (confirm("Delete this PDF note?")) {
+        notes = notes.filter(item => item.id !== note.id);
+        localStorage.setItem("bpp_notes", JSON.stringify(notes));
+        renderAdminFiles();
+      }
+    };
+
+    row.append(label, remove);
+    container.appendChild(row);
+  });
+}
+
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
