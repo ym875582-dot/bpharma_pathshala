@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>B.Pharm Pathshala | Yash Sir</title>
+<title>B.Pharm Pathshala | Yash Maheshwari Sir</title>
 <meta name="description" content="B.Pharm Pathshala — semester-wise Important Questions for PCI New and Old AKTU syllabuses.">
 <style>
 :root{--red:#c90016;--dark:#a50012;--white:#fff;--light:#fff3f4;--text:#202124;--border:#f0b9bf}
@@ -53,20 +53,80 @@ footer{background:var(--dark);color:#fff;padding:25px 15px;text-align:center}foo
 <label for="pdfTitle">PDF Title</label><input id="pdfTitle" placeholder="e.g. Unit 1 Important Questions">
 <label for="pdfFile">Select PDF</label><input id="pdfFile" type="file" accept=".pdf,application/pdf"><button onclick="uploadPDF()">Add Important Questions PDF</button><p id="message"></p><hr><h3>Uploaded Important Questions (this browser)</h3><div id="adminFiles"></div></div></section>
 </main>
-<footer><h3>⚕ B.Pharm Pathshala</h3><p>Presented by Yash Sir</p><p>Pharmacy is not just a course. It is a commitment to life.</p><p>Study | Prepare | Succeed</p><p>© <span id="year"></span> B.Pharm Pathshala</p></footer>
+<footer><h3>⚕ B.Pharm Pathshala</h3><p>Presented by Yash Maheshwari Sir</p><p>Pharmacy is not just a course. It is a commitment to life.</p><p>Study | Prepare | Succeed</p><p>© <span id="year"></span> B.Pharm Pathshala</p></footer>
 <script>
 /* Subject names below are carried over from the supplied index.html.
    Verify the PCI/AKTU syllabus lists before treating them as official. */
 const subjectsData={
-pci:{
-1:["Human Anatomy and Physiology I","Pharmaceutical Analysis I","Pharmaceutics I","Pharmaceutical Inorganic Chemistry","Communication Skills","Remedial Biology / Remedial Mathematics"],
-2:["Human Anatomy and Physiology II","Pharmaceutical Organic Chemistry I","Biochemistry","Pathophysiology","Computer Applications in Pharmacy","Environmental Sciences"],
-3:["Pharmaceutical Organic Chemistry II","Physical Pharmaceutics I","Pharmaceutical Microbiology","Pharmaceutical Engineering"],
-4:["Pharmaceutical Organic Chemistry III","Medicinal Chemistry I","Physical Pharmaceutics II","Pharmacology I","Pharmacognosy and Phytochemistry I"],
-5:["Medicinal Chemistry II","Industrial Pharmacy I","Pharmacology II","Pharmacognosy and Phytochemistry II","Pharmaceutical Jurisprudence"],
-6:["Medicinal Chemistry III","Pharmacology III","Herbal Drug Technology","Biopharmaceutics and Pharmacokinetics","Pharmaceutical Biotechnology","Quality Assurance"],
-7:["Instrumental Methods of Analysis","Industrial Pharmacy II","Pharmacy Practice","Novel Drug Delivery Systems"],
-8:["Biostatistics and Research Methodology","Social and Preventive Pharmacy","Pharma Marketing Management","Pharmaceutical Regulatory Science","Pharmacovigilance","Quality Control and Standardization of Herbals","Computer Aided Drug Design","Cell and Molecular Biology","Cosmetic Science","Experimental Pharmacology","Advanced Instrumentation Techniques","Dietary Supplements and Nutraceuticals"]},
+
+pci: {
+  1: [
+    "BP101T - Basics of Python Programming for Pharmaceutical Sciences",
+    "BP102T - General Pharmacy",
+    "BP103T - Healthcare Psychology and Communication Skills",
+    "BP104T - Human Anatomy, Physiology and Pathophysiology I",
+    "BP105T - Introduction to Pharmacognosy",
+    "BP106T - Pharmaceutical Inorganic and Analytical Chemistry"
+  ],
+  2: [
+    "BP201T - Applied Biostatistics and Data Analytics for Pharmaceutical Sciences",
+    "BP202T - Biochemistry",
+    "BP203T - Human Anatomy, Physiology and Pathophysiology II",
+    "BP204T - Pharmaceutical Organic Chemistry",
+    "BP205T - Pharmacognosy and Phytochemistry",
+    "BP206T - Physical Pharmaceutics"
+  ],
+  3: [
+    "BP301T - Introduction to Machine Learning in Pharmaceutical Sciences",
+    "BP302T - Environmental Sciences",
+    "BP303T - Ethics and Universal Human Values",
+    "BP304T - General Pharmacology",
+    "BP305T - Heterocyclic Compounds and Stereochemistry",
+    "BP306T - Pharmaceutical Dosage Forms I",
+    "BP307T - Pharmaceutical Engineering",
+    "BP308T - Pharmaceutical Microbiology"
+  ],
+  4: [
+    "BP401T - Herbal Drug Technology",
+    "BP402T - Medicinal Chemistry",
+    "BP403T - Pharmaceutical Biotechnology",
+    "BP404T - Social Pharmacy and Public Health",
+    "BP405T - Systemic Pharmacology I"
+  ],
+  5: [
+    "BP501T - Biomedical Chemistry",
+    "BP502T - Industrial Pharmacognosy",
+    "BP503T - Innovation and Startup Ecosystem",
+    "BP504T - Pharmaceutical Dosage Form II",
+    "BP505T - Pharmaceutical Quality Assurance",
+    "BP506T - Systemic Pharmacology II"
+  ],
+  6: [
+    "BP601T - Advanced Pharmacognosy",
+    "BP602T - Biopharmaceutics and Pharmacokinetics",
+    "BP603T - Intellectual Property Rights",
+    "BP604T - AI Applications in Pharmaceutical Sciences",
+    "BP605T - Pharmaceutical Analysis",
+    "BP606T - Pharmaceutical Jurisprudence"
+  ],
+  7: [
+    "BP701T - Biostatistics and Research Methodology",
+    "BP702T - Cosmetics and Cosmeceuticals",
+    "BP703T - AI in Clinical Applications",
+    "BP704T - Modern Analytical Techniques",
+    "BP705T - Pharmacovigilance",
+    "BP706T - Pharmacy Practice",
+    "BP707T - Regulatory Affairs"
+  ],
+  8: [
+    "BP801T - Ethical Considerations and Translational Applications of AI in Pharmacy",
+    "BP802T - Clinical Pharmacotherapeutics",
+    "BP803T - Industrial Pharmacy and Facility Design",
+    "BP804T - Pharmaceutical Management",
+    "BP805T - Sterile Dosage Forms and Novel Drug Delivery System"
+  ]
+},
+
 aktu:{
 1:["Human Anatomy and Physiology I","Pharmaceutical Analysis I","Pharmaceutics I","Pharmaceutical Inorganic Chemistry","Communication Skills","Remedial Biology / Remedial Mathematics"],
 2:["Human Anatomy and Physiology II","Pharmaceutical Organic Chemistry I","Biochemistry","Pathophysiology","Computer Applications in Pharmacy","Environmental Sciences"],
