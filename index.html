@@ -6,6 +6,56 @@
 <title>B.Pharm Pathshala | Yash Maheshwari Sir</title>
 <meta name="description" content="B.Pharm Pathshala — semester-wise Important Questions for PCI New and Old AKTU syllabuses.">
 <style>
+/* Mobile Responsive Layout Fix */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px;
+  width: 100%;
+}
+
+.course-card,
+.feature,
+.panel {
+  min-width: 0;
+  width: 100%;
+}
+
+.feature {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 650px) {
+  #home > .grid:first-child {
+    grid-template-columns: 1fr;
+  }
+
+  #home > .grid:last-child {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .course-card {
+    padding: 16px;
+  }
+
+  .course-buttons {
+    flex-direction: column;
+  }
+
+  .course-buttons button {
+    width: 100%;
+  }
+
+  .feature {
+    padding: 14px 8px;
+  }
+
+  .feature p {
+    color: #555;
+    line-height: 1.5;
+  }
+}
 /* B.Pharm Pathshala — News Scrolling Ticker */
 .news-ticker {
   display: flex;
